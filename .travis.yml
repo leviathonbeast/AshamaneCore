@@ -13,7 +13,7 @@ addons:
     update: true
     sources:
       - sourceline: 'ppa:mhier/libboost-latest'
-      - ubuntu-toolchain-r-test
+      - sourceline: 'ppa:ubuntu-toolchain-r/test'
     packages:
       - g++-7
       - boost1.67
@@ -29,7 +29,6 @@ services:
 before_install:
   - git config user.email "travis@build.bot" && git config user.name "Travis CI"
   - git tag -a -m "Travis build" init
-  - apt upgrade cmake
 
 install:
   - mysql -uroot -e 'create database test_mysql;'
