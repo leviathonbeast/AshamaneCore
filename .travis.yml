@@ -15,14 +15,13 @@ addons:
       - sourceline: 'ppa:mhier/libboost-latest'
       - ubuntu-toolchain-r-test
     packages:
-      - g++-6
+      - g++-7
       - boost1.67
       - libssl-dev
       - libmysqlclient-dev
       - libreadline6-dev
       - zlib1g-dev
       - libbz2-dev
-      - cmake
 
 services:
   - mysql
